@@ -5,7 +5,10 @@ const Card = ({id,name,email,address, company,phone,username,website}) => {
   return (
     <div className='card-c'>
         <div className='card-ca'>
-        <div className="name"><p>{name}</p></div>
+        <div className="name">
+         
+       <p>{name}</p>
+          </div>
         <div className="contact">
          <h4>CONTACT</h4>
          <div ><p>{email}</p></div>

@@ -5,7 +5,7 @@
     margin-top: 1rem;
 }
 
-.pagination button {
+.m button {
     width: 30px;
     height: 30px;
     font-weight: 400;
@@ -18,10 +18,16 @@
     border: 1px solid black;
 }
 
-.pagination button.active {
+.m button.active {
     font-weight: 900;
    border: none;
     background: #f00505;
     color: white;
    
+}
+.next , .prev{
+    border: none;
+    background: transparent;
+   margin-right: 1rem;
+   margin-left: 1rem;
 }

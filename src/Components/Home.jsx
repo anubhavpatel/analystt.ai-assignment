@@ -6,19 +6,19 @@ import Loader from './Loader';
 import '../Style/Home.css'
 import DataMap from './DataMap';
 import Pagination from "./Pagination"
+
 const Home = () => {
   const [myData, setMyData] = useState([]);
  
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(4);
-
-
+  const [postsPerPage, setPostsPerPage] = useState(3);
 
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(
+      const { data } = await axios.get( 
        "https://jsonplaceholder.typicode.com/users"
+     
       );
       setMyData(data);
 
@@ -31,7 +31,8 @@ const Home = () => {
   const lastPostIndex = currentPage * postsPerPage;
     const firstPostIndex = lastPostIndex - postsPerPage;
     const currentPosts = myData.slice(firstPostIndex, lastPostIndex);
-
+    
+   
   return (
     <div className='home-c'>
     {loading ? (
@@ -39,11 +40,14 @@ const Home = () => {
     ) : (
       <>
      <h4>Analystt.ai Intern Assignment</h4>
-        <DataMap myData={currentPosts}/>
+         <DataMap myData={currentPosts}/>
         <Pagination totalPosts={myData.length}
                 postsPerPage={postsPerPage}
                 setCurrentPage={setCurrentPage}
-                currentPage={currentPage}/>
+                currentPage={currentPage}/> 
+                
+      
+                
       </>
     )}
    
