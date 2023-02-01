@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap');
+.card-c{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    margin: 1.5rem;
+    flex-direction: column;
+    padding: 3rem 1rem 3rem 1rem;
+    
+  
+}
+.card-ca {
+    display: flex;
+    width: 100%;
+   
+}
+.card-cb{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem 6rem 2rem 6rem ;
+}
+.des{
+    display: flex;
+    flex-direction: column;
+}
+.inf{
+    display: flex;
+    width: 100%;
+ 
+}
+.inf1{
+    width: 40%;
+    flex-direction: column; 
+  
+    
+}
+.inf2{
+    width: 60%;
+    flex-direction: column; 
+    
+}
+
+.inf-d{
+    margin-top: .5rem;
+}
+.name{
+    width: 20%;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+}
+.contact{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.city{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.state{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.contact h4, .city h4, .state h4{
+    font-size: 1rem;
+   font-weight: 900;
+  
+
+}
+.button{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.details{
+    background-color: rgb(240, 25, 25);
+    
+     border: none;
+     border-radius: .5rem;
+    padding: .5rem;
+    color: white;
+    font-size: .7rem;
+}
+
+@media only screen and (max-width: 900px) {
+        .contact h4, .city h4, .state h4{
+            font-size: .8rem;
+        }
+        .name{
+            padding-left: .8rem;
+        }
+        .name p, .contact p, .city p, .state p{
+            font-size:  .9rem;
+        }
+        .card-c{
+           padding: 1.5rem;
+           border-radius: .3rem;
+           margin: 1rem;
+        }
+        .details{
+            font-size: .7rem;
+        }
+        .card-cb {
+            padding: 1rem;
+            
+        }
+        .card-cb p{
+            font-size: .8rem;
+        }
+        .card-cb h5 {
+            font-size: .8em;
+        }
+        .des h3{
+             font-size: .9rem;
+        }
+       
+  }
+  @media only screen and (max-width: 750px) {
+    .contact h4, .city h4, .state h4{
+        font-size: .6rem;
+    }
+    .name{
+        padding-left: .8rem;
+    }
+    .name p, .contact p, .city p, .state p{
+        font-size:  .35rem;
+    }
+    .card-c{
+       padding: 1rem 0rem;
+       border-radius: .3rem;
+       margin: 1rem;
+    }
+    .details{
+        font-size: .3rem;
+        padding: .2rem .3rem;
+        border-radius: .2rem;
+    }
+    .card-cb {
+        padding: 1.2rem;
+        
+    }
+    .card-cb p{
+        font-size: .35rem;
+    }
+    .card-cb h5 {
+        font-size: .35em;
+    }
+    .des h3{
+         font-size: .6rem;
+    }
+   
+}
