@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/analystt.ai-assignment/static/css/main.1430858b.css",
+    "main.js": "/analystt.ai-assignment/static/js/main.a8302dbf.js",
+    "index.html": "/analystt.ai-assignment/index.html",
+    "main.1430858b.css.map": "/analystt.ai-assignment/static/css/main.1430858b.css.map",
+    "main.a8302dbf.js.map": "/analystt.ai-assignment/static/js/main.a8302dbf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1430858b.css",
+    "static/js/main.a8302dbf.js"
+  ]
+}
